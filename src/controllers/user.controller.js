@@ -182,7 +182,7 @@ const logoutUser = asyncHandler(async(req, res) => {
     .clearCookie("refreshToken", options)
     .json(new ApiResponse(200, {}, "User logged Out"))
 })
-
+/*
 const refreshAccessToken = asyncHandler(async (req, res) => {
     const incomingRefreshToken = req.cookies.refreshToken || req.body.refreshToken
 
@@ -479,18 +479,19 @@ const getWatchHistory = asyncHandler(async(req, res) => {
         )
     )
 })
+    */
 
 
 export {
     registerUser,
     loginUser,
     logoutUser,
-    refreshAccessToken,
-    changeCurrentPassword,
-    getCurrentUser,
-    updateAccountDetails,
-    updateUserAvatar,
-    updateUserCoverImage,
-    getUserChannelProfile,
-    getWatchHistory
+    // refreshAccessToken,
+    // changeCurrentPassword,
+    // getCurrentUser,
+    // updateAccountDetails,
+    // updateUserAvatar,
+    // updateUserCoverImage,
+    // getUserChannelProfile,
+    // getWatchHistory
 }
